@@ -3,3 +3,8 @@ node_js:
   - "lts/*"
 script:
   - make build test
+deploy:
+  provider: script
+  script: make somethingelse
+  on:
+    branch: master
