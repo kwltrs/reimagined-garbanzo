@@ -3,6 +3,7 @@ node_js:
   - "lts/*"
 script: make build test
 deploy:
+  skip_cleanup: true
   provider: script
   script: make somethingelse
   on:
