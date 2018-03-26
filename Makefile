@@ -8,6 +8,6 @@ install:
 test:
 	echo "testing"
 somethingelse:
-	echo "somethingelse"
+	echo "somethingelse $(NPM_TOKEN)"
 publish:
 	echo "publishing"
